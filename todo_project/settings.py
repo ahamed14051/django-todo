@@ -145,5 +145,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 import dj_database_url
 
 DATABASES = {
-    'default': dj_database_url.config(default='postgres://localhost')
+    'default': dj_database_url.config(
+        default='postgres://localhost:5432/todo'  # Fallback in case DATABASE_URL is not set
+    )
 }
