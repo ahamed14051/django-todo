@@ -1,0 +1,16 @@
+<!-- todo/templates/todo/home.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<header class="bg-info text-white py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 font-weight-bold">Welcome to My Todo App</h1>
+                <p class="lead mt-3">Manage your tasks efficiently with our simple and intuitive app.</p>
+                <a href="{% url 'task_list' %}" class="btn btn-light btn-lg mt-4">Get Started</a> <!-- Link to the todo list -->
+            </div>
+        </div>
+    </div>
+</header>
+{% endblock %}
